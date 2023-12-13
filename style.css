@@ -1,0 +1,113 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 150ms;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    width: 20%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.menu .logo img {
+    height: 70px;
+}
+
+#menu-2 {
+    left: -100%;
+    transition: all 500ms;
+    width: 100%;
+    height: 90vh;
+}
+
+@media screen and (min-width: 700px) {
+    #tikla {
+        display: none;
+    }
+
+    .menu {
+        width: 20%;
+        margin: 0 auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+
+    #menu-2 {
+        transition: all 500ms;
+        position: relative;
+        display: flex;
+        top: 0vh;
+        left: 0;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+    }
+#menu-2 li a:hover{
+    transform: scale(.9);
+}
+    #menu-2 li {
+        margin: 0 5px;
+    }
+}
+.logo , .ana-block{
+    display: flex;
+    justify-content: center;
+}
+.animate{
+    animation: animate 1s infinite;
+}
+@keyframes animate{
+    50%{
+        color: rgb(125, 125, 125);
+    }
+}
+.piyasa-kodu{
+    color: #4b4b4b;
+    font-size: 90%p;
+}
+.borsa-ismi{
+    color: #3d3d3d;
+    font-size: 110%
+}
+.tarih{
+    color: #fe3838;
+}
+.taslak{
+    animation: taslak 2.5s infinite;
+}
+@keyframes taslak {
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(-1px);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.onemli{
+    animation: onemli 1s infinite;
+}
+@keyframes onemli {
+    50%{
+        color: red;
+    }
+}
