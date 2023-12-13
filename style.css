@@ -81,7 +81,7 @@ body {
     font-size: 110%
 }
 .tarih{
-    color: #fe3838;
+    color: #ce0000;
 }
 .taslak{
     animation: taslak 2.5s infinite;
@@ -110,4 +110,7 @@ body {
     50%{
         color: red;
     }
+}
+.arz{
+    margin-bottom: 15vh;
 }
