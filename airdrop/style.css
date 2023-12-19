@@ -1,17 +1,20 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 * {
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
     transition: all 150ms;
+    border: 1px solid red;
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
 .menu {
     width: 20%;
     margin: 0 auto;
@@ -56,68 +59,104 @@ body {
         display: flex;
         flex-direction: row;
     }
-#menu-2 li a:hover{
-    transform: scale(.9);
-}
+
+    #menu-2 li a:hover {
+        transform: scale(.9);
+    }
+
     #menu-2 li {
         margin: 0 5px;
     }
 }
-.logo , .ana-block{
+
+.logo,
+.ana-block {
     display: flex;
     justify-content: center;
 }
-.animate{
+
+.animate {
     animation: animate 1s infinite;
 }
-@keyframes animate{
-    50%{
+
+@keyframes animate {
+    50% {
         color: rgb(125, 125, 125);
     }
 }
-.piyasa-kodu{
+
+.piyasa-kodu {
     color: #4b4b4b;
     font-size: 90%p;
 }
-.borsa-ismi{
+
+.borsa-ismi {
     color: #3d3d3d;
     font-size: 110%
 }
-.tarih{
+
+.tarih {
     color: #ce0000;
 }
 
-.taslak{
+.taslak {
     animation: taslak 1s infinite;
 }
+
 @keyframes taslak {
+
     20%,
     40%,
     60%,
     80% {
         transform: translateX(-1px);
     }
+
     30%,
     50%,
     70%,
     90% {
         transform: translateX(1px);
     }
+
     100% {
         transform: translateX(0);
     }
 }
-.onemli{
+
+.onemli {
     animation: onemli 1s infinite;
 }
+
 @keyframes onemli {
-    50%{
+    50% {
         color: red;
     }
 }
-.arz{
+
+.arz {
     margin-bottom: 15vh;
 }
-.block{
+
+.block {
     width: 100%;
+}
+.hidden {
+    display: none;
+}
+.force-background-blue {
+    background-color: #0ff !important;
+}
+* {
+    font-family: arial;
+}
+#jquery-tab-menu {
+    padding-bottom: 20px;
+}
+#jquery-tab-menu a {
+    color: inherit;
+}
+#jquery-tab-results {
+    padding-top: 40px;
+    text-align: center;
 }
